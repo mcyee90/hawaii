@@ -50,10 +50,10 @@ def precipitation():
     startdate = dt.datetime.today()
     yearAgo = startdate + dt.timedelta(days=-2*365)
     rain_list = []
-    percipitation_query = session.query(Measurements.date, func.sum(Measurements.prcp))\
+    precipitation_query = session.query(Measurements.date, func.sum(Measurements.prcp))\
                         .filter(Measurements.date >= yearAgo)\
                         .group_by(Measurements.date).all()
-    for rainy in percipitation_query:
+    for rainy in precipitation_query:
         pdate = rainy[0].strftime("%Y-%m-%d")
         prain = round(rainy[1], 5)
         prcp_dict = {"date":pdate, "prcp":prain}
