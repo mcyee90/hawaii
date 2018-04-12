@@ -59,7 +59,7 @@
 
 # * Plot the results using the DataFrame `plot` method.
 
-# <center><img src='images/precip.png' /></center>
+# <center><img src='images/precipitation.png' /></center>
 
 # * Use Pandas to print the summary statistics for the precipitation data.
 
@@ -112,7 +112,7 @@
 
 #   * Use Pandas to plot an area plot (`stacked=False`) for the daily normals.
 
-#   <center><img src="images/daily_normals.png" /></center>
+#   <center><img src="images/dailynormals.png" /></center>
 
 # ---
 
